@@ -35,7 +35,8 @@ cycles of active learning.
 
 ## Plot Space
 
-> Add any relevant plot or visualizations here. This can be a sample output or any plots that help explain the project's process or results.
+![Plot](Nwpu.jpeg)
+
 
 ---
 
