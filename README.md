@@ -1,10 +1,35 @@
 # ALBoost-FM
-## Active Learning with YOLO and Image Blackout
+## Enhancing Active Learning Performance with Initial Data Selection Based on Foundation Models
 
 ### Abstract
 
-This project implements an active learning framework for improving object detection in images using YOLO (You Only Look Once). The system uses image blackout strategies to enhance the quality of labeled data by sampling images intelligently through clustering. The approach integrates active learning with YOLOv8 to iteratively improve model accuracy by selecting the most informative samples for labeling. The project includes code for training the model and evaluating its performance.
-
+In active object detection, selecting the initial labeled
+pool is very important, especially in complex datasets with
+expensive labeling and low resource budget. This study
+presents an active learning framework designed to optimize
+the initial training cycle of active learning for the
+object detection task. Our approach diverges from traditional
+methods by utilizing feature-based clustering from
+the YOLO-World model and refining images based on objectness
+scores from YOLO rather than relying on uncertainty
+sampling in the initial cycle. This approach focuses
+on finding samples with various features and emphasizes
+training in areas where the foundation model is most confident.
+Doing so helps the model better understand different
+types of objects. To evaluate how well this method
+works, we use two complex datasets called Aquarium and
+NWPU VHR-10, which are well known for their diverse object
+sizes and challenging conditions. Subsequent cycles
+employ a consistency-based sampling technique, maintaining
+the robustness of the training process. In the NWPU
+dataset, our clustering method increases mAP50 by an average
+of 6.6% in image-based evaluation compared to random
+sampling. Moreover, our clustering with the image refinement
+method shows an improvement of approximately
+11% in object-based evaluation. The results show improvements
+in model performance and labeling time, demonstrating
+the advantages of using foundation models in the early
+cycles of active learning.
 ---
 
 ## Plot Space
