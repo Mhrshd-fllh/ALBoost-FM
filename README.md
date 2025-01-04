@@ -30,6 +30,7 @@ method shows an improvement of approximately
 in model performance and labeling time, demonstrating
 the advantages of using foundation models in the early
 cycles of active learning.
+
 ---
 
 ## Plot Space
